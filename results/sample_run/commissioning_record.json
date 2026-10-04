@@ -1,0 +1,1742 @@
+{
+  "title": "Loop-check commissioning record",
+  "note": "SIMULATED RUN - simulated instrumentation rack and simulated wiring faults. No real hardware or plant data.",
+  "rack": "Laser amplifier test bench - instrumentation rack A1 (SIMULATED)",
+  "io_list_revision": "C",
+  "io_list_sha256": "8cf86df6eed1",
+  "mode": "kit",
+  "seed": 7,
+  "timestamp_utc": "2026-10-04T23:08:51Z",
+  "tester": "simulated run",
+  "tolerance_pct_of_span": 0.5,
+  "wall_time_s": 1.89,
+  "summary": {
+    "points": 38,
+    "passed": 28,
+    "failed": 10
+  },
+  "sign_off": {
+    "tested_by": "",
+    "witnessed_by": "",
+    "date": ""
+  },
+  "results": [
+    {
+      "tag": "FT-101",
+      "channel": "A1-AI1.1",
+      "signal": "AI_4_20mA",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0428384,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 0.0039491,
+          "raw": 4.00316,
+          "status": "OK",
+          "err_pct": 0.0197455,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 5.0,
+          "found": 4.99302,
+          "raw": 7.99441,
+          "status": "OK",
+          "err_pct": -0.0349116,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 10.0,
+          "found": 9.99708,
+          "raw": 11.9977,
+          "status": "OK",
+          "err_pct": -0.0146139,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 15.0,
+          "found": 15.0086,
+          "raw": 16.0069,
+          "status": "OK",
+          "err_pct": 0.0428384,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 20.0,
+          "found": 20.0017,
+          "raw": 20.0013,
+          "status": "OK",
+          "err_pct": 0.00828485,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "FT-102",
+      "channel": "A1-AI1.2",
+      "signal": "AI_4_20mA",
+      "passed": false,
+      "cause": "scaling",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "raw signal correct at every step, but 0 % reads -9.983 and 100 % reads 49.99 L/min (I/O list: 0 .. 40)",
+      "max_err_pct": 24.9734,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": -9.98347,
+          "raw": 4.00441,
+          "status": "OK",
+          "err_pct": -24.9587,
+          "signal_ok": true,
+          "ok": false
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 10.0,
+          "found": 5.02327,
+          "raw": 8.00621,
+          "status": "OK",
+          "err_pct": -12.4418,
+          "signal_ok": true,
+          "ok": false
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 20.0,
+          "found": 20.006,
+          "raw": 12.0016,
+          "status": "OK",
+          "err_pct": 0.0151242,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 30.0,
+          "found": 34.9839,
+          "raw": 15.9957,
+          "status": "OK",
+          "err_pct": 12.4599,
+          "signal_ok": true,
+          "ok": false
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 40.0,
+          "found": 49.9894,
+          "raw": 19.9972,
+          "status": "OK",
+          "err_pct": 24.9734,
+          "signal_ok": true,
+          "ok": false
+        }
+      ],
+      "cause_text": "scaling mismatch between field device and controller channel"
+    },
+    {
+      "tag": "PT-101",
+      "channel": "A1-AI1.3",
+      "signal": "AI_4_20mA",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0598908,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 0.000541612,
+          "raw": 4.00087,
+          "status": "OK",
+          "err_pct": 0.00541612,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 2.5,
+          "found": 2.49997,
+          "raw": 7.99995,
+          "status": "OK",
+          "err_pct": -0.000314519,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 5.0,
+          "found": 4.9988,
+          "raw": 11.9981,
+          "status": "OK",
+          "err_pct": -0.012043,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 7.5,
+          "found": 7.49931,
+          "raw": 15.9989,
+          "status": "OK",
+          "err_pct": -0.00692861,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 10.0,
+          "found": 10.006,
+          "raw": 20.0096,
+          "status": "OK",
+          "err_pct": 0.0598908,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "LT-101",
+      "channel": "A1-AI1.4",
+      "signal": "AI_4_20mA",
+      "passed": false,
+      "cause": "stuck",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "raw frozen at 15.2 mA for all steps",
+      "max_err_pct": 70.0,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 70.0,
+          "raw": 15.2,
+          "status": "OK",
+          "err_pct": 70.0,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 25.0,
+          "found": 70.0,
+          "raw": 15.2,
+          "status": "OK",
+          "err_pct": 45.0,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 50.0,
+          "found": 70.0,
+          "raw": 15.2,
+          "status": "OK",
+          "err_pct": 20.0,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 75.0,
+          "found": 70.0,
+          "raw": 15.2,
+          "status": "OK",
+          "err_pct": -5.0,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 100.0,
+          "found": 70.0,
+          "raw": 15.2,
+          "status": "OK",
+          "err_pct": -30.0,
+          "signal_ok": false,
+          "ok": false
+        }
+      ],
+      "cause_text": "stuck / frozen value"
+    },
+    {
+      "tag": "TT-101",
+      "channel": "A1-RT1.1",
+      "signal": "AI_RTD",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0525328,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 100.0,
+          "expected": 0.0,
+          "found": -0.0232799,
+          "raw": 99.991,
+          "status": "OK",
+          "err_pct": -0.0465597,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 104.812,
+          "expected": 12.5,
+          "found": 12.489,
+          "raw": 104.808,
+          "status": "OK",
+          "err_pct": -0.0220428,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 109.625,
+          "expected": 25.0,
+          "found": 24.9737,
+          "raw": 109.615,
+          "status": "OK",
+          "err_pct": -0.0525328,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 114.437,
+          "expected": 37.5,
+          "found": 37.5013,
+          "raw": 114.438,
+          "status": "OK",
+          "err_pct": 0.0026096,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 119.25,
+          "expected": 50.0,
+          "found": 50.0097,
+          "raw": 119.254,
+          "status": "OK",
+          "err_pct": 0.0194533,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "TT-102",
+      "channel": "A1-RT1.2",
+      "signal": "AI_RTD",
+      "passed": false,
+      "cause": "open",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "raw 1e+04 ohm, status OVERRANGE at every step",
+      "max_err_pct": 51428.6,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 100.0,
+          "expected": 0.0,
+          "found": 25714.3,
+          "raw": 10000.0,
+          "status": "OVERRANGE",
+          "err_pct": 51428.6,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 25,
+          "inject": 104.812,
+          "expected": 12.5,
+          "found": 25714.3,
+          "raw": 10000.0,
+          "status": "OVERRANGE",
+          "err_pct": 51403.6,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 50,
+          "inject": 109.625,
+          "expected": 25.0,
+          "found": 25714.3,
+          "raw": 10000.0,
+          "status": "OVERRANGE",
+          "err_pct": 51378.6,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 75,
+          "inject": 114.437,
+          "expected": 37.5,
+          "found": 25714.3,
+          "raw": 10000.0,
+          "status": "OVERRANGE",
+          "err_pct": 51353.6,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 100,
+          "inject": 119.25,
+          "expected": 50.0,
+          "found": 25714.3,
+          "raw": 10000.0,
+          "status": "OVERRANGE",
+          "err_pct": 51328.6,
+          "signal_ok": false,
+          "ok": false
+        }
+      ],
+      "cause_text": "open circuit"
+    },
+    {
+      "tag": "TT-103",
+      "channel": "A1-RT1.3",
+      "signal": "AI_RTD",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0199187,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 100.0,
+          "expected": 0.0,
+          "found": -0.0190297,
+          "raw": 99.9927,
+          "status": "OK",
+          "err_pct": -0.0190297,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 109.625,
+          "expected": 25.0,
+          "found": 24.9979,
+          "raw": 109.624,
+          "status": "OK",
+          "err_pct": -0.00212668,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 119.25,
+          "expected": 50.0,
+          "found": 50.0149,
+          "raw": 119.256,
+          "status": "OK",
+          "err_pct": 0.0148822,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 128.875,
+          "expected": 75.0,
+          "found": 75.0199,
+          "raw": 128.883,
+          "status": "OK",
+          "err_pct": 0.0199187,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 138.5,
+          "expected": 100.0,
+          "found": 100.017,
+          "raw": 138.507,
+          "status": "OK",
+          "err_pct": 0.017113,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "CH-101-RUN",
+      "channel": "A1-DI1.1",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "CH-101-FLT",
+      "channel": "A1-DI1.2",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "CH-101-EN",
+      "channel": "A1-DO1.1",
+      "signal": "DO",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PT-201",
+      "channel": "A1-AV1.1",
+      "signal": "AI_0_10V",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0484041,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 0.0,
+          "expected": 1e-08,
+          "found": 9.99266e-09,
+          "raw": -0.000327822,
+          "status": "OK",
+          "err_pct": -0.00318948,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 2.5,
+          "expected": 3.16228e-06,
+          "found": 3.1683e-06,
+          "raw": 2.50073,
+          "status": "OK",
+          "err_pct": 0.00826515,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 5.0,
+          "expected": 0.001,
+          "found": 0.000995125,
+          "raw": 4.99786,
+          "status": "OK",
+          "err_pct": -0.0212226,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 7.5,
+          "expected": 0.316228,
+          "found": 0.318978,
+          "raw": 7.50371,
+          "status": "OK",
+          "err_pct": 0.0376064,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 10.0,
+          "expected": 100.0,
+          "found": 98.8916,
+          "raw": 9.99515,
+          "status": "OK",
+          "err_pct": -0.0484041,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PT-202",
+      "channel": "A1-AV1.2",
+      "signal": "AI_0_10V",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0255739,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 0.0,
+          "expected": 0.001,
+          "found": 0.00100006,
+          "raw": 3.94794e-05,
+          "status": "OK",
+          "err_pct": 0.000450773,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 2.5,
+          "expected": 0.0316228,
+          "found": 0.0316172,
+          "raw": 2.49987,
+          "status": "OK",
+          "err_pct": -0.00126764,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 5.0,
+          "expected": 1.0,
+          "found": 1.00216,
+          "raw": 5.00154,
+          "status": "OK",
+          "err_pct": 0.015616,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 7.5,
+          "expected": 31.6228,
+          "found": 31.6087,
+          "raw": 7.49968,
+          "status": "OK",
+          "err_pct": -0.00322017,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 10.0,
+          "expected": 1000.0,
+          "found": 996.473,
+          "raw": 9.99742,
+          "status": "OK",
+          "err_pct": -0.0255739,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "VP-201-RUN",
+      "channel": "A1-DI1.3",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "VV-201-CMD",
+      "channel": "A1-DO1.2",
+      "signal": "DO",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "VV-201-ZSO",
+      "channel": "A1-DI1.4",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "VV-201-ZSC",
+      "channel": "A1-DI1.5",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PT-301",
+      "channel": "A1-AI2.1",
+      "signal": "AI_4_20mA",
+      "passed": false,
+      "cause": "swap",
+      "partner": "PT-302",
+      "partner_channel": "A1-AI2.3",
+      "evidence": "injection at PT-301 field terminals moved channel A1-AI2.3 (PT-302); A1-AI2.1 stayed near 14.4 mA",
+      "max_err_pct": 64.9902,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 3.89941,
+          "raw": 14.3984,
+          "status": "OK",
+          "err_pct": 64.9902,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 1.5,
+          "found": 3.89957,
+          "raw": 14.3988,
+          "status": "OK",
+          "err_pct": 39.9928,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 3.0,
+          "found": 3.90083,
+          "raw": 14.4022,
+          "status": "OK",
+          "err_pct": 15.0138,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 4.5,
+          "found": 3.90157,
+          "raw": 14.4042,
+          "status": "OK",
+          "err_pct": -9.97376,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 6.0,
+          "found": 3.8977,
+          "raw": 14.3939,
+          "status": "OK",
+          "err_pct": -35.0384,
+          "signal_ok": false,
+          "ok": false
+        }
+      ],
+      "cause_text": "swapped with A1-AI2.3 (PT-302)"
+    },
+    {
+      "tag": "FT-301",
+      "channel": "A1-AI2.2",
+      "signal": "AI_4_20mA",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0206981,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 0.00337201,
+          "raw": 4.00108,
+          "status": "OK",
+          "err_pct": 0.00674402,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 12.5,
+          "found": 12.4914,
+          "raw": 7.99724,
+          "status": "OK",
+          "err_pct": -0.017239,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 25.0,
+          "found": 25.0079,
+          "raw": 12.0025,
+          "status": "OK",
+          "err_pct": 0.0157235,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 37.5,
+          "found": 37.5077,
+          "raw": 16.0025,
+          "status": "OK",
+          "err_pct": 0.0154215,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 50.0,
+          "found": 50.0103,
+          "raw": 20.0033,
+          "status": "OK",
+          "err_pct": 0.0206981,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PT-302",
+      "channel": "A1-AI2.3",
+      "signal": "AI_4_20mA",
+      "passed": false,
+      "cause": "swap",
+      "partner": "PT-301",
+      "partner_channel": "A1-AI2.1",
+      "evidence": "injection at PT-302 field terminals moved channel A1-AI2.1 (PT-301); A1-AI2.3 stayed near 11.99 mA",
+      "max_err_pct": 50.0167,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": 4.99509,
+          "raw": 11.9921,
+          "status": "OK",
+          "err_pct": 49.9509,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 2.5,
+          "found": 5.00196,
+          "raw": 12.0031,
+          "status": "OK",
+          "err_pct": 25.0196,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 5.0,
+          "found": 4.9947,
+          "raw": 11.9915,
+          "status": "OK",
+          "err_pct": -0.0529818,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 7.5,
+          "found": 4.99982,
+          "raw": 11.9997,
+          "status": "OK",
+          "err_pct": -25.0018,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 10.0,
+          "found": 4.99833,
+          "raw": 11.9973,
+          "status": "OK",
+          "err_pct": -50.0167,
+          "signal_ok": false,
+          "ok": false
+        }
+      ],
+      "cause_text": "swapped with A1-AI2.1 (PT-301)"
+    },
+    {
+      "tag": "XV-301-CMD",
+      "channel": "A1-DO1.3",
+      "signal": "DO",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "XV-301-ZSO",
+      "channel": "A1-DI1.6",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "MT-401",
+      "channel": "A1-AI2.4",
+      "signal": "AI_4_20mA",
+      "passed": false,
+      "cause": "noise",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "reading spread up to 3.53 % of span within one step",
+      "max_err_pct": 0.767101,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 4.0,
+          "expected": 0.0,
+          "found": -0.163323,
+          "raw": 3.97387,
+          "status": "OK",
+          "err_pct": -0.163323,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 8.0,
+          "expected": 25.0,
+          "found": 25.2497,
+          "raw": 8.03996,
+          "status": "OK",
+          "err_pct": 0.249719,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 12.0,
+          "expected": 50.0,
+          "found": 49.2329,
+          "raw": 11.8773,
+          "status": "OK",
+          "err_pct": -0.767101,
+          "signal_ok": false,
+          "ok": false
+        },
+        {
+          "pct": 75,
+          "inject": 16.0,
+          "expected": 75.0,
+          "found": 74.903,
+          "raw": 15.9845,
+          "status": "OK",
+          "err_pct": -0.0969522,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 20.0,
+          "expected": 100.0,
+          "found": 99.3995,
+          "raw": 19.9039,
+          "status": "OK",
+          "err_pct": -0.600494,
+          "signal_ok": false,
+          "ok": false
+        }
+      ],
+      "cause_text": "noisy signal (unstable reading)"
+    },
+    {
+      "tag": "TT-401",
+      "channel": "A1-RT1.4",
+      "signal": "AI_RTD",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0279251,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 100.0,
+          "expected": 0.0,
+          "found": -0.0139625,
+          "raw": 99.9946,
+          "status": "OK",
+          "err_pct": -0.0279251,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 104.812,
+          "expected": 12.5,
+          "found": 12.4871,
+          "raw": 104.808,
+          "status": "OK",
+          "err_pct": -0.0257439,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 109.625,
+          "expected": 25.0,
+          "found": 24.9959,
+          "raw": 109.623,
+          "status": "OK",
+          "err_pct": -0.00815468,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 114.437,
+          "expected": 37.5,
+          "found": 37.4986,
+          "raw": 114.437,
+          "status": "OK",
+          "err_pct": -0.00275537,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 119.25,
+          "expected": 50.0,
+          "found": 49.9862,
+          "raw": 119.245,
+          "status": "OK",
+          "err_pct": -0.0276016,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "AT-402",
+      "channel": "A1-AV1.3",
+      "signal": "AI_0_10V",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0414277,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 0.0,
+          "expected": 0.0,
+          "found": -0.00271262,
+          "raw": -0.00108505,
+          "status": "OK",
+          "err_pct": -0.0108505,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 2.5,
+          "expected": 6.25,
+          "found": 6.24247,
+          "raw": 2.49699,
+          "status": "OK",
+          "err_pct": -0.0301142,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 5.0,
+          "expected": 12.5,
+          "found": 12.5016,
+          "raw": 5.00064,
+          "status": "OK",
+          "err_pct": 0.00644722,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 7.5,
+          "expected": 18.75,
+          "found": 18.7604,
+          "raw": 7.50414,
+          "status": "OK",
+          "err_pct": 0.0414277,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 10.0,
+          "expected": 25.0,
+          "found": 25.003,
+          "raw": 10.0012,
+          "status": "OK",
+          "err_pct": 0.011881,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PD-501-EN",
+      "channel": "A1-DO1.4",
+      "signal": "DO",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PD-501-FLT",
+      "channel": "A1-DI1.7",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "PD-501-RDY",
+      "channel": "A1-DI1.8",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "JT-501",
+      "channel": "A1-AV1.4",
+      "signal": "AI_0_10V",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0396883,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 0.0,
+          "expected": 0.0,
+          "found": 0.0594474,
+          "raw": 0.00118895,
+          "status": "OK",
+          "err_pct": 0.0118895,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 2.5,
+          "expected": 125.0,
+          "found": 125.19,
+          "raw": 2.5038,
+          "status": "OK",
+          "err_pct": 0.037973,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 5.0,
+          "expected": 250.0,
+          "found": 249.843,
+          "raw": 4.99685,
+          "status": "OK",
+          "err_pct": -0.0314926,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 7.5,
+          "expected": 375.0,
+          "found": 374.802,
+          "raw": 7.49603,
+          "status": "OK",
+          "err_pct": -0.0396883,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 10.0,
+          "expected": 500.0,
+          "found": 499.953,
+          "raw": 9.99906,
+          "status": "OK",
+          "err_pct": -0.00941444,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "TT-501",
+      "channel": "A1-RT2.1",
+      "signal": "AI_RTD",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": 0.0490543,
+      "steps": [
+        {
+          "pct": 0,
+          "inject": 100.0,
+          "expected": 0.0,
+          "found": 0.0490543,
+          "raw": 100.019,
+          "status": "OK",
+          "err_pct": 0.0490543,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 25,
+          "inject": 109.625,
+          "expected": 25.0,
+          "found": 24.9955,
+          "raw": 109.623,
+          "status": "OK",
+          "err_pct": -0.00453935,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 50,
+          "inject": 119.25,
+          "expected": 50.0,
+          "found": 49.9925,
+          "raw": 119.247,
+          "status": "OK",
+          "err_pct": -0.00753408,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 75,
+          "inject": 128.875,
+          "expected": 75.0,
+          "found": 75.021,
+          "raw": 128.883,
+          "status": "OK",
+          "err_pct": 0.0210147,
+          "signal_ok": true,
+          "ok": true
+        },
+        {
+          "pct": 100,
+          "inject": 138.5,
+          "expected": 100.0,
+          "found": 100.011,
+          "raw": 138.504,
+          "status": "OK",
+          "err_pct": 0.0106911,
+          "signal_ok": true,
+          "ok": true
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "SH-501-CMD",
+      "channel": "A1-DO1.5",
+      "signal": "DO",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "SH-501-ZSO",
+      "channel": "A1-DI2.1",
+      "signal": "DI",
+      "passed": false,
+      "cause": "swap",
+      "partner": "SH-501-ZSC",
+      "partner_channel": "A1-DI2.2",
+      "evidence": "toggling SH-501-ZSO switched SH-501-ZSC (A1-DI2.2) instead",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": true
+        }
+      ],
+      "cause_text": "swapped with A1-DI2.2 (SH-501-ZSC)"
+    },
+    {
+      "tag": "SH-501-ZSC",
+      "channel": "A1-DI2.2",
+      "signal": "DI",
+      "passed": false,
+      "cause": "swap",
+      "partner": "SH-501-ZSO",
+      "partner_channel": "A1-DI2.1",
+      "evidence": "toggling SH-501-ZSC switched SH-501-ZSO (A1-DI2.1) instead",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": false
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "swapped with A1-DI2.1 (SH-501-ZSO)"
+    },
+    {
+      "tag": "XL-501",
+      "channel": "A1-DO1.6",
+      "signal": "DO",
+      "passed": false,
+      "cause": "polarity",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "state follows the stimulus inverted",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": true
+        },
+        {
+          "action": "command TRUE",
+          "expected": true,
+          "found": false
+        },
+        {
+          "action": "command FALSE",
+          "expected": false,
+          "found": true
+        }
+      ],
+      "cause_text": "output polarity reversed"
+    },
+    {
+      "tag": "ZS-601A",
+      "channel": "A1-DI2.3",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "ZS-601B",
+      "channel": "A1-DI3.1",
+      "signal": "DI",
+      "passed": false,
+      "cause": "inverted",
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "state follows the stimulus inverted",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": false
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": true
+        }
+      ],
+      "cause_text": "inverted contact (NO wired as NC or vice versa)"
+    },
+    {
+      "tag": "HS-602A",
+      "channel": "A1-DI2.4",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "HS-602B",
+      "channel": "A1-DI3.2",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    },
+    {
+      "tag": "HS-604",
+      "channel": "A1-DI2.5",
+      "signal": "DI",
+      "passed": true,
+      "cause": null,
+      "partner": null,
+      "partner_channel": null,
+      "evidence": "",
+      "max_err_pct": null,
+      "steps": [
+        {
+          "action": "close contact",
+          "expected": true,
+          "found": true
+        },
+        {
+          "action": "open contact",
+          "expected": false,
+          "found": false
+        }
+      ],
+      "cause_text": "-"
+    }
+  ],
+  "injected_faults_simulation_only": [
+    "swap PT-301<->PT-302",
+    "swap SH-501-ZSO<->SH-501-ZSC",
+    "open TT-102",
+    "scaling FT-102",
+    "inverted ZS-601B",
+    "stuck LT-101",
+    "polarity XL-501",
+    "noise MT-401"
+  ]
+}

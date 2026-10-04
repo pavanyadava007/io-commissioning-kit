@@ -1,0 +1,7766 @@
+{
+ "note": "SIMULATED rack and simulated wiring faults. Numbers come from scripts/run_campaign.py.",
+ "config": {
+  "scenarios": 200,
+  "seed": 1,
+  "max_faults_per_scenario": 3,
+  "io_points": 38,
+  "tolerance_pct_of_span": 0.5,
+  "fault_classes": [
+   "swap",
+   "open",
+   "scaling",
+   "inverted",
+   "stuck",
+   "polarity",
+   "noise"
+  ]
+ },
+ "environment": {
+  "python": "3.11.16",
+  "platform": "Linux-6.1.158-178.288.amzn2023.x86_64-x86_64-with-glibc2.34",
+  "processor": "x86_64"
+ },
+ "overall": {
+  "n": 288,
+  "kit_detected": 288,
+  "kit_classified": 288,
+  "naive_detected": 227,
+  "kit_detected_pct": 100.0,
+  "kit_classified_pct": 100.0,
+  "naive_detected_pct": 78.8,
+  "scenarios_without_faults": 50,
+  "healthy_point_checks": 7277,
+  "kit_false_alarms": 0,
+  "naive_false_alarms": 0,
+  "kit_false_alarm_pct": 0.0,
+  "naive_false_alarm_pct": 0.0
+ },
+ "per_class": {
+  "inverted": {
+   "n": 48,
+   "kit_detected": 48,
+   "kit_classified": 48,
+   "naive_detected": 48,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "noise": {
+   "n": 37,
+   "kit_detected": 37,
+   "kit_classified": 37,
+   "naive_detected": 23,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 62.2
+  },
+  "open": {
+   "n": 33,
+   "kit_detected": 33,
+   "kit_classified": 33,
+   "naive_detected": 33,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "polarity": {
+   "n": 39,
+   "kit_detected": 39,
+   "kit_classified": 39,
+   "naive_detected": 39,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "scaling": {
+   "n": 53,
+   "kit_detected": 53,
+   "kit_classified": 53,
+   "naive_detected": 33,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 62.3
+  },
+  "stuck": {
+   "n": 43,
+   "kit_detected": 43,
+   "kit_classified": 43,
+   "naive_detected": 24,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 55.8
+  },
+  "swap": {
+   "n": 35,
+   "kit_detected": 35,
+   "kit_classified": 35,
+   "naive_detected": 27,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 77.1
+  }
+ },
+ "per_variant": {
+  "inverted": {
+   "n": 48,
+   "kit_detected": 48,
+   "kit_classified": 48,
+   "naive_detected": 48,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "noise": {
+   "n": 37,
+   "kit_detected": 37,
+   "kit_classified": 37,
+   "naive_detected": 23,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 62.2
+  },
+  "open": {
+   "n": 33,
+   "kit_detected": 33,
+   "kit_classified": 33,
+   "naive_detected": 33,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "polarity": {
+   "n": 39,
+   "kit_detected": 39,
+   "kit_classified": 39,
+   "naive_detected": 39,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "scaling/rtd-curve": {
+   "n": 18,
+   "kit_detected": 18,
+   "kit_classified": 18,
+   "naive_detected": 18,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "scaling/span": {
+   "n": 15,
+   "kit_detected": 15,
+   "kit_classified": 15,
+   "naive_detected": 15,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 100.0
+  },
+  "scaling/widen": {
+   "n": 20,
+   "kit_detected": 20,
+   "kit_classified": 20,
+   "naive_detected": 0,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 0.0
+  },
+  "stuck": {
+   "n": 43,
+   "kit_detected": 43,
+   "kit_classified": 43,
+   "naive_detected": 24,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 55.8
+  },
+  "swap": {
+   "n": 35,
+   "kit_detected": 35,
+   "kit_classified": 35,
+   "naive_detected": 27,
+   "kit_detected_pct": 100.0,
+   "kit_classified_pct": 100.0,
+   "naive_detected_pct": 77.1
+  }
+ },
+ "timing_s": {
+  "total": 167.1,
+  "kit": 147.6,
+  "naive": 17.8,
+  "kit_per_scenario": 0.738,
+  "naive_per_scenario": 0.089
+ },
+ "scenarios": [
+  {
+   "scenario": 0,
+   "faults": [
+    "stuck TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck TT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck TT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 1,
+   "faults": [
+    "noise AT-402",
+    "inverted ZS-601A",
+    "inverted HS-602B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise AT-402",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted ZS-601A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise AT-402",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted ZS-601A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 2,
+   "faults": [
+    "swap SH-501-ZSC<->CH-101-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap SH-501-ZSC<->CH-101-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap SH-501-ZSC<->CH-101-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 3,
+   "faults": [
+    "inverted SH-501-ZSC",
+    "noise FT-101",
+    "polarity PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 4,
+   "faults": [
+    "polarity VV-201-CMD",
+    "stuck TT-103"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck TT-103",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck TT-103",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 5,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 6,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 7,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 8,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 9,
+   "faults": [
+    "polarity VV-201-CMD",
+    "inverted ZS-601B",
+    "swap HS-602A<->VV-201-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap HS-602A<->VV-201-ZSO",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap HS-602A<->VV-201-ZSO",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 10,
+   "faults": [
+    "inverted SH-501-ZSO",
+    "open TT-401",
+    "open VV-201-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open TT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open VV-201-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open TT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open VV-201-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 11,
+   "faults": [
+    "scaling FT-101",
+    "noise TT-101",
+    "open XV-301-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 12,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 13,
+   "faults": [
+    "polarity XL-501",
+    "stuck JT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 14,
+   "faults": [
+    "scaling PT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 15,
+   "faults": [
+    "stuck PT-101",
+    "polarity PD-501-EN",
+    "inverted ZS-601A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck PT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted ZS-601A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck PT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted ZS-601A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 16,
+   "faults": [
+    "scaling PT-302"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-302",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-302",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 17,
+   "faults": [
+    "polarity SH-501-CMD",
+    "swap PT-201<->JT-501",
+    "noise TT-103"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap PT-201<->JT-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap PT-201<->JT-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 18,
+   "faults": [
+    "inverted ZS-601B",
+    "swap SH-501-ZSO<->CH-101-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap SH-501-ZSO<->CH-101-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap SH-501-ZSO<->CH-101-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 19,
+   "faults": [
+    "polarity SH-501-CMD",
+    "stuck PD-501-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck PD-501-FLT",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck PD-501-FLT",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 20,
+   "faults": [
+    "open XL-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open XL-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open XL-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 21,
+   "faults": [
+    "swap VP-201-RUN<->SH-501-ZSC"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap VP-201-RUN<->SH-501-ZSC",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap VP-201-RUN<->SH-501-ZSC",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 22,
+   "faults": [
+    "inverted SH-501-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 23,
+   "faults": [
+    "noise PT-302",
+    "inverted HS-604"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted HS-604",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted HS-604",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 24,
+   "faults": [
+    "polarity SH-501-CMD",
+    "stuck FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck FT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck FT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 25,
+   "faults": [
+    "stuck HS-602A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck HS-602A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck HS-602A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 26,
+   "faults": [
+    "inverted CH-101-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 27,
+   "faults": [
+    "noise PT-302",
+    "stuck HS-602B",
+    "open ZS-601A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck HS-602B",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open ZS-601A",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck HS-602B",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open ZS-601A",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 28,
+   "faults": [
+    "inverted HS-602B",
+    "scaling TT-401",
+    "scaling FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 29,
+   "faults": [
+    "stuck FT-102",
+    "polarity VV-201-CMD",
+    "stuck VP-201-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck VP-201-RUN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck VP-201-RUN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 30,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 31,
+   "faults": [
+    "swap TT-101<->TT-102",
+    "noise FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap TT-101<->TT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap TT-101<->TT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 32,
+   "faults": [
+    "swap FT-301<->FT-102",
+    "scaling PT-101",
+    "scaling TT-103"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap FT-301<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-103",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap FT-301<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-103",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 33,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 34,
+   "faults": [
+    "open PT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open PT-301",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open PT-301",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 35,
+   "faults": [
+    "polarity XV-301-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 36,
+   "faults": [
+    "inverted ZS-601B",
+    "scaling JT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling JT-501",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling JT-501",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 37,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 38,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 39,
+   "faults": [
+    "inverted XV-301-ZSO",
+    "inverted HS-602B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted XV-301-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted XV-301-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 40,
+   "faults": [
+    "scaling LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 41,
+   "faults": [
+    "stuck JT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 42,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 43,
+   "faults": [
+    "swap PD-501-FLT<->VP-201-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PD-501-FLT<->VP-201-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PD-501-FLT<->VP-201-RUN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 44,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 45,
+   "faults": [
+    "inverted ZS-601B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 46,
+   "faults": [
+    "stuck VV-201-ZSO",
+    "polarity XL-501",
+    "stuck SH-501-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck VV-201-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck SH-501-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck VV-201-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck SH-501-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 47,
+   "faults": [
+    "stuck FT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 48,
+   "faults": [
+    "polarity XL-501",
+    "inverted CH-101-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 49,
+   "faults": [
+    "open VV-201-CMD",
+    "swap XV-301-ZSO<->CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open VV-201-CMD",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap XV-301-ZSO<->CH-101-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open VV-201-CMD",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap XV-301-ZSO<->CH-101-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 50,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 51,
+   "faults": [
+    "scaling TT-102",
+    "inverted SH-501-ZSC"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 52,
+   "faults": [
+    "open FT-101",
+    "stuck LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open FT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck LT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open FT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck LT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 53,
+   "faults": [
+    "stuck SH-501-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck SH-501-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck SH-501-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 54,
+   "faults": [
+    "noise TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 55,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 56,
+   "faults": [
+    "open TT-401",
+    "swap VV-201-CMD<->XL-501",
+    "polarity SH-501-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open TT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap VV-201-CMD<->XL-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open TT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap VV-201-CMD<->XL-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 57,
+   "faults": [
+    "inverted CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 58,
+   "faults": [
+    "scaling TT-501",
+    "inverted CH-101-RUN",
+    "scaling MT-401"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 59,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 60,
+   "faults": [
+    "open XV-301-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 61,
+   "faults": [
+    "scaling TT-401"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 62,
+   "faults": [
+    "scaling LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 63,
+   "faults": [
+    "noise JT-501",
+    "noise PT-201"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise JT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise JT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 64,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 65,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 66,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 67,
+   "faults": [
+    "open PT-201"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open PT-201",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open PT-201",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 68,
+   "faults": [
+    "scaling FT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling FT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling FT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 69,
+   "faults": [
+    "scaling FT-301",
+    "scaling PT-201"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling FT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling FT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 70,
+   "faults": [
+    "stuck HS-602A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck HS-602A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck HS-602A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 71,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 72,
+   "faults": [
+    "swap PD-501-RDY<->CH-101-FLT",
+    "inverted HS-604"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PD-501-RDY<->CH-101-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted HS-604",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PD-501-RDY<->CH-101-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "inverted HS-604",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 73,
+   "faults": [
+    "noise TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 74,
+   "faults": [
+    "swap HS-604<->HS-602A",
+    "inverted CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap HS-604<->HS-602A",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap HS-604<->HS-602A",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 75,
+   "faults": [
+    "stuck TT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck TT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck TT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 76,
+   "faults": [
+    "scaling LT-101",
+    "scaling TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 77,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 78,
+   "faults": [
+    "swap FT-101<->FT-102",
+    "inverted CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap FT-101<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap FT-101<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 79,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 80,
+   "faults": [
+    "open HS-604"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open HS-604",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open HS-604",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 81,
+   "faults": [
+    "open CH-101-RUN",
+    "inverted VV-201-ZSO",
+    "polarity VV-201-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open CH-101-RUN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open CH-101-RUN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 82,
+   "faults": [
+    "polarity CH-101-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 83,
+   "faults": [
+    "inverted HS-602A",
+    "stuck PT-302",
+    "polarity PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck PT-302",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck PT-302",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 84,
+   "faults": [
+    "swap VV-201-CMD<->PD-501-EN",
+    "swap FT-102<->FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap VV-201-CMD<->PD-501-EN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap FT-102<->FT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap VV-201-CMD<->PD-501-EN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap FT-102<->FT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 85,
+   "faults": [
+    "polarity SH-501-CMD",
+    "scaling AT-402"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 86,
+   "faults": [
+    "inverted CH-101-FLT",
+    "swap MT-401<->PT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap MT-401<->PT-301",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap MT-401<->PT-301",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 87,
+   "faults": [
+    "swap PT-301<->FT-102",
+    "noise PT-302",
+    "noise FT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PT-301<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PT-301<->FT-102",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-302",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 88,
+   "faults": [
+    "polarity XV-301-CMD",
+    "scaling TT-102",
+    "stuck VV-201-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck VV-201-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck VV-201-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 89,
+   "faults": [
+    "open VV-201-ZSC",
+    "scaling PT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open VV-201-ZSC",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open VV-201-ZSC",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 90,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 91,
+   "faults": [
+    "swap HS-602B<->ZS-601A",
+    "scaling PT-201",
+    "scaling FT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap HS-602B<->ZS-601A",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling FT-102",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap HS-602B<->ZS-601A",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling FT-102",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 92,
+   "faults": [
+    "scaling PT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 93,
+   "faults": [
+    "swap ZS-601B<->SH-501-ZSC",
+    "stuck TT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap ZS-601B<->SH-501-ZSC",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck TT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap ZS-601B<->SH-501-ZSC",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "stuck TT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 94,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 95,
+   "faults": [
+    "inverted CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 96,
+   "faults": [
+    "stuck TT-101",
+    "swap FT-101<->LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck TT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap FT-101<->LT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck TT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap FT-101<->LT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 97,
+   "faults": [
+    "inverted PD-501-RDY",
+    "noise TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-RDY",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-RDY",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 98,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 99,
+   "faults": [
+    "swap XL-501<->VV-201-CMD",
+    "open CH-101-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap XL-501<->VV-201-CMD",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap XL-501<->VV-201-CMD",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 100,
+   "faults": [
+    "noise FT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 101,
+   "faults": [
+    "swap XL-501<->SH-501-CMD",
+    "scaling TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap XL-501<->SH-501-CMD",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap XL-501<->SH-501-CMD",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 102,
+   "faults": [
+    "open ZS-601B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 103,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 104,
+   "faults": [
+    "noise TT-103",
+    "open XV-301-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open XV-301-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 105,
+   "faults": [
+    "stuck PT-201",
+    "noise PT-202",
+    "scaling AT-402"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck PT-201",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck PT-201",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 106,
+   "faults": [
+    "noise TT-401",
+    "stuck PT-301",
+    "noise PT-202"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-401",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck PT-301",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-401",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck PT-301",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 107,
+   "faults": [
+    "swap PD-501-FLT<->HS-604",
+    "scaling TT-102",
+    "scaling TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PD-501-FLT<->HS-604",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PD-501-FLT<->HS-604",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 108,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 109,
+   "faults": [
+    "stuck FT-102",
+    "scaling TT-102",
+    "stuck PT-201"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck PT-201",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck FT-102",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck PT-201",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 110,
+   "faults": [
+    "inverted SH-501-ZSC",
+    "inverted VP-201-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 111,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 112,
+   "faults": [
+    "inverted CH-101-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted CH-101-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 113,
+   "faults": [
+    "stuck XV-301-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck XV-301-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck XV-301-ZSO",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 114,
+   "faults": [
+    "polarity XL-501",
+    "polarity VV-201-CMD",
+    "open MT-401"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open MT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open MT-401",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 115,
+   "faults": [
+    "polarity PD-501-EN",
+    "open JT-501",
+    "scaling PT-202"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open JT-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open JT-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 116,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 117,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 118,
+   "faults": [
+    "open XL-501",
+    "noise TT-103"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open XL-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open XL-501",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-103",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 119,
+   "faults": [
+    "scaling PT-301",
+    "open SH-501-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open SH-501-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open SH-501-ZSO",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 120,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 121,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 122,
+   "faults": [
+    "open CH-101-EN",
+    "scaling TT-401",
+    "open LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open LT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open LT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 123,
+   "faults": [
+    "polarity PD-501-EN",
+    "polarity XV-301-CMD",
+    "inverted SH-501-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 124,
+   "faults": [
+    "stuck PT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck PT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck PT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 125,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 126,
+   "faults": [
+    "polarity CH-101-EN",
+    "scaling PT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 127,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 128,
+   "faults": [
+    "noise PT-201",
+    "noise TT-401",
+    "noise TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-401",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-401",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 129,
+   "faults": [
+    "inverted VP-201-RUN",
+    "scaling AT-402",
+    "stuck ZS-601A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck ZS-601A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling AT-402",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck ZS-601A",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 130,
+   "faults": [
+    "swap JT-501<->AT-402"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap JT-501<->AT-402",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap JT-501<->AT-402",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 131,
+   "faults": [
+    "swap PT-302<->PT-101",
+    "open PD-501-RDY",
+    "polarity SH-501-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PT-302<->PT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open PD-501-RDY",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PT-302<->PT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open PD-501-RDY",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 132,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 133,
+   "faults": [
+    "stuck TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck TT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck TT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 134,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 135,
+   "faults": [
+    "noise PT-202"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise PT-202",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 136,
+   "faults": [
+    "open PT-302"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open PT-302",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open PT-302",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 137,
+   "faults": [
+    "stuck VP-201-RUN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck VP-201-RUN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck VP-201-RUN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 138,
+   "faults": [
+    "scaling PT-202",
+    "noise TT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 139,
+   "faults": [
+    "inverted PD-501-FLT",
+    "noise LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise LT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise LT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 140,
+   "faults": [
+    "stuck PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck PD-501-EN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck PD-501-EN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 141,
+   "faults": [
+    "scaling LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling LT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 142,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 143,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 144,
+   "faults": [
+    "polarity XL-501",
+    "polarity VV-201-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 145,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 146,
+   "faults": [
+    "stuck XV-301-CMD",
+    "inverted SH-501-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck XV-301-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck XV-301-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 147,
+   "faults": [
+    "noise TT-501",
+    "scaling FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-501",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling FT-101",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 148,
+   "faults": [
+    "polarity PD-501-EN",
+    "scaling PT-301",
+    "scaling TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 149,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 150,
+   "faults": [
+    "inverted VV-201-ZSO",
+    "stuck FT-101",
+    "polarity SH-501-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck FT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck FT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 151,
+   "faults": [
+    "inverted SH-501-ZSC"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 152,
+   "faults": [
+    "polarity XL-501",
+    "scaling TT-102",
+    "inverted SH-501-ZSC"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-102",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 153,
+   "faults": [
+    "scaling TT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-501",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 154,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 155,
+   "faults": [
+    "stuck JT-501",
+    "scaling PT-101",
+    "polarity VV-201-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck JT-501",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-101",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 156,
+   "faults": [
+    "polarity CH-101-EN",
+    "inverted ZS-601B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted ZS-601B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 157,
+   "faults": [
+    "polarity PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 158,
+   "faults": [
+    "noise TT-102",
+    "noise PT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 159,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 160,
+   "faults": [
+    "scaling TT-401",
+    "noise PT-301"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 161,
+   "faults": [
+    "inverted HS-602B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted HS-602B",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 162,
+   "faults": [
+    "inverted VP-201-RUN",
+    "inverted SH-501-ZSC"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted VP-201-RUN",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted SH-501-ZSC",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 163,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 164,
+   "faults": [
+    "stuck TT-103",
+    "inverted CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck TT-103",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck TT-103",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted CH-101-FLT",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 165,
+   "faults": [
+    "swap TT-501<->TT-101",
+    "open ZS-601B"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap TT-501<->TT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap TT-501<->TT-101",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 166,
+   "faults": [
+    "polarity CH-101-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity CH-101-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 167,
+   "faults": [
+    "polarity XL-501",
+    "scaling PT-301",
+    "stuck VV-201-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck VV-201-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XL-501",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-301",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck VV-201-CMD",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 168,
+   "faults": [
+    "scaling PT-202"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 169,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 170,
+   "faults": [
+    "inverted SH-501-ZSO",
+    "stuck LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck LT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted SH-501-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "stuck LT-101",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 171,
+   "faults": [
+    "scaling PT-201",
+    "stuck PD-501-RDY"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck PD-501-RDY",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling PT-201",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "stuck PD-501-RDY",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 172,
+   "faults": [
+    "inverted HS-602A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 173,
+   "faults": [
+    "noise FT-301",
+    "polarity VV-201-CMD"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise FT-301",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "polarity VV-201-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 174,
+   "faults": [
+    "stuck VV-201-ZSC",
+    "noise FT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck VV-201-ZSC",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck VV-201-ZSC",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "noise FT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 175,
+   "faults": [
+    "scaling TT-401",
+    "noise PT-201",
+    "noise TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling TT-401",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise PT-201",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 176,
+   "faults": [
+    "swap PT-201<->JT-501"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PT-201<->JT-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PT-201<->JT-501",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 177,
+   "faults": [
+    "stuck CH-101-EN",
+    "stuck FT-301",
+    "open CH-101-FLT"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck CH-101-EN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "stuck FT-301",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open CH-101-FLT",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck CH-101-EN",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "stuck FT-301",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open CH-101-FLT",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 178,
+   "faults": [
+    "polarity PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity PD-501-EN",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 179,
+   "faults": [
+    "scaling MT-401",
+    "swap VV-201-CMD<->PD-501-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap VV-201-CMD<->PD-501-EN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap VV-201-CMD<->PD-501-EN",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 180,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 181,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 182,
+   "faults": [
+    "inverted XV-301-ZSO"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted XV-301-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted XV-301-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 183,
+   "faults": [
+    "swap PT-202<->PT-201",
+    "swap FT-102<->MT-401",
+    "open LT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap PT-202<->PT-201",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap FT-102<->MT-401",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open LT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 33
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap PT-202<->PT-201",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap FT-102<->MT-401",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open LT-101",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 33
+   }
+  },
+  {
+   "scenario": 184,
+   "faults": [
+    "polarity SH-501-CMD",
+    "noise AT-402",
+    "scaling PT-202"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise AT-402",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity SH-501-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise AT-402",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "scaling PT-202",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 185,
+   "faults": [
+    "swap VV-201-ZSO<->PD-501-RDY"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap VV-201-ZSO<->PD-501-RDY",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap VV-201-ZSO<->PD-501-RDY",
+      "class": "swap",
+      "variant": "swap",
+      "detected": false,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 186,
+   "faults": [
+    "inverted PD-501-RDY"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-RDY",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "inverted PD-501-RDY",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 37
+   }
+  },
+  {
+   "scenario": 187,
+   "faults": [
+    "noise TT-102",
+    "open PT-301",
+    "noise TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open PT-301",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "noise TT-102",
+      "class": "noise",
+      "variant": "noise",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open PT-301",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "noise TT-101",
+      "class": "noise",
+      "variant": "noise",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 188,
+   "faults": [
+    "stuck HS-604",
+    "inverted VV-201-ZSO",
+    "inverted HS-602A"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "stuck HS-604",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "stuck HS-604",
+      "class": "stuck",
+      "variant": "stuck",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "inverted VV-201-ZSO",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "inverted HS-602A",
+      "class": "inverted",
+      "variant": "inverted",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 189,
+   "faults": [
+    "scaling JT-501",
+    "open TT-102"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling JT-501",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open TT-102",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling JT-501",
+      "class": "scaling",
+      "variant": "scaling/span",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open TT-102",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  },
+  {
+   "scenario": 190,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 191,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 192,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 193,
+   "faults": [
+    "scaling MT-401",
+    "open PD-501-RDY",
+    "open CH-101-EN"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open PD-501-RDY",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "scaling MT-401",
+      "class": "scaling",
+      "variant": "scaling/widen",
+      "detected": false,
+      "classified": false
+     },
+     {
+      "fault": "open PD-501-RDY",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "open CH-101-EN",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 35
+   }
+  },
+  {
+   "scenario": 194,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 195,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 196,
+   "faults": [
+    "open ZS-601B",
+    "swap HS-604<->PD-501-FLT",
+    "scaling TT-101"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap HS-604<->PD-501-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "open ZS-601B",
+      "class": "open",
+      "variant": "open",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap HS-604<->PD-501-FLT",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "scaling TT-101",
+      "class": "scaling",
+      "variant": "scaling/rtd-curve",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 34
+   }
+  },
+  {
+   "scenario": 197,
+   "faults": [],
+   "kit": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   },
+   "naive": {
+    "faults": [],
+    "false_alarms": [],
+    "healthy_points": 38
+   }
+  },
+  {
+   "scenario": 198,
+   "faults": [
+    "polarity XV-301-CMD",
+    "swap PT-101<->FT-301",
+    "swap HS-602B<->HS-604"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap PT-101<->FT-301",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     },
+     {
+      "fault": "swap HS-602B<->HS-604",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 33
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "polarity XV-301-CMD",
+      "class": "polarity",
+      "variant": "polarity",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap PT-101<->FT-301",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     },
+     {
+      "fault": "swap HS-602B<->HS-604",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 33
+   }
+  },
+  {
+   "scenario": 199,
+   "faults": [
+    "swap FT-301<->MT-401"
+   ],
+   "kit": {
+    "faults": [
+     {
+      "fault": "swap FT-301<->MT-401",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": true
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   },
+   "naive": {
+    "faults": [
+     {
+      "fault": "swap FT-301<->MT-401",
+      "class": "swap",
+      "variant": "swap",
+      "detected": true,
+      "classified": false
+     }
+    ],
+    "false_alarms": [],
+    "healthy_points": 36
+   }
+  }
+ ]
+}

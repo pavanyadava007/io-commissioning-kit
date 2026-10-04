@@ -1,0 +1,2996 @@
+{
+  "title": "Cause-and-effect test record",
+  "note": "SIMULATED RUN - simulated instrumentation rack and simulated wiring faults. No real hardware or plant data. Logic test harness only, not a safety function.",
+  "timestamp_utc": "2026-10-04T23:08:52Z",
+  "tester": "simulated run",
+  "summary": {
+    "causes": 15,
+    "effects": 6,
+    "matrix_cells_checked": 90,
+    "effects_covered": 6,
+    "checks": 327,
+    "passed": 327,
+    "failed": 0
+  },
+  "failed": [],
+  "checks": [
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "-",
+      "step": "baseline",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "door"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C01",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "door"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C02",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "door"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C03",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "estop"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C04",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "estop"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C05",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "flow"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C06",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "flow"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C07",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "temp"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C08",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "vacuum"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C09",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "forevac"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C10",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "oxygen"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C11",
+      "step": "boundary",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "shutter_unknown"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C12",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "shutter_unknown"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C13",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "equipment"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C14",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "trip",
+      "effect": "alarm",
+      "signal": "alarms",
+      "expected": "non-empty",
+      "found": [
+        "equipment"
+      ],
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": false,
+      "found": false,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "cleared, no reset (latched)",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E1",
+      "signal": "LASER_PERMIT",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E2",
+      "signal": "PD-501-EN",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E3",
+      "signal": "SH-501-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E4",
+      "signal": "XL-501",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E5",
+      "signal": "VV-201-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "cause": "C15",
+      "step": "reset",
+      "effect": "E6",
+      "signal": "XV-301-CMD",
+      "expected": true,
+      "found": true,
+      "ok": true
+    }
+  ],
+  "sign_off": {
+    "tested_by": "",
+    "witnessed_by": "",
+    "date": ""
+  }
+}
