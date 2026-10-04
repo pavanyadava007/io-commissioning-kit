@@ -5,6 +5,8 @@ high-energy laser amplifier test bench. One YAML I/O list drives the cable sched
 interface descriptions, the loop-check procedure, an automated loop check over OPC UA, the
 commissioning record and an issue log ready for an issue tracker.
 
+**Live page:** https://huggingface.co/spaces/pavanyadava07/io-commissioning-kit (I/O list, sample commissioning record, issue log and campaign results)
+
 > **Everything here is simulated.** The rack, field devices, wiring faults and the OPC UA server
 > are a local Python simulation (asyncua). There is no real PLC, no EtherCAT or TwinCAT, and no
 > real plant data. The interlock code is a logic test harness, not a safety function.
