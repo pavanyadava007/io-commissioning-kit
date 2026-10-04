@@ -1,0 +1,46 @@
+# Cause-and-effect matrix for the SIMULATED laser amplifier bench.
+# This is the specification. iokit/interlock.py is the implementation under test.
+# Logic test harness only - NOT a safety function.
+healthy:            # input state in which no cause is active
+  ZS-601A: true
+  ZS-601B: true
+  HS-602A: true
+  HS-602B: true
+  FT-101: 12.0
+  FT-102: 24.0
+  TT-101: 20.0
+  PT-201: 1.0e-5
+  PT-202: 5.0e-2
+  AT-402: 20.9
+  SH-501-ZSO: false
+  SH-501-ZSC: true
+  CH-101-FLT: true
+  PD-501-FLT: true
+  HS-604: false
+requests: [pump_request, shutter_request, gate_valve_request, purge_request]
+
+effects:
+  E1: {name: LASER_PERMIT, description: Laser permit (internal), healthy: true}
+  E2: {name: PD-501-EN, description: Diode pump driver enable, healthy: true}
+  E3: {name: SH-501-CMD, description: Beam shutter open command, healthy: true}
+  E4: {name: XL-501, description: Laser-on warning lamp (lit while pump enabled), healthy: true}
+  E5: {name: VV-201-CMD, description: Gate valve open command, healthy: true}
+  E6: {name: XV-301-CMD, description: N2 purge valve open command, healthy: true}
+
+# Each cause: inputs that make it active (trip) and a value just inside the limit (boundary).
+causes:
+  C01: {description: Door open (both channels), trip: {ZS-601A: false, ZS-601B: false}, effects: [E1, E2, E3, E4]}
+  C02: {description: Door channels disagree (A closed, B open), trip: {ZS-601B: false}, effects: [E1, E2, E3, E4]}
+  C03: {description: Door channels disagree (A open, B closed), trip: {ZS-601A: false}, effects: [E1, E2, E3, E4]}
+  C04: {description: E-stop chain open, trip: {HS-602A: false, HS-602B: false}, effects: [E1, E2, E3, E4, E5, E6]}
+  C05: {description: E-stop channels disagree, trip: {HS-602B: false}, effects: [E1, E2, E3, E4, E5, E6]}
+  C06: {description: Amplifier head coolant flow below 8 L/min, trip: {FT-101: 7.9}, boundary: {FT-101: 8.0}, effects: [E1, E2, E3, E4]}
+  C07: {description: Diode coolant flow below 15 L/min, trip: {FT-102: 14.9}, boundary: {FT-102: 15.0}, effects: [E1, E2, E3, E4]}
+  C08: {description: Coolant supply temperature above 28 degC, trip: {TT-101: 28.1}, boundary: {TT-101: 28.0}, effects: [E1, E2, E3, E4]}
+  C09: {description: Spatial filter vacuum worse than 1e-3 mbar, trip: {PT-201: 1.1e-3}, boundary: {PT-201: 1.0e-3}, effects: [E1, E2, E3, E4]}
+  C10: {description: Forevacuum worse than 1 mbar, trip: {PT-202: 1.1}, boundary: {PT-202: 1.0}, effects: [E1, E2, E3, E4, E5]}
+  C11: {description: Lab oxygen below 19.5 %vol, trip: {AT-402: 19.4}, boundary: {AT-402: 19.5}, effects: [E1, E2, E3, E4, E6]}
+  C12: {description: Shutter position unknown (both limits off), trip: {SH-501-ZSC: false}, effects: [E1, E2, E3, E4]}
+  C13: {description: Shutter position unknown (both limits on), trip: {SH-501-ZSO: true}, effects: [E1, E2, E3, E4]}
+  C14: {description: Chiller fault, trip: {CH-101-FLT: false}, effects: [E1, E2, E3, E4]}
+  C15: {description: Diode driver fault, trip: {PD-501-FLT: false}, effects: [E1, E2, E3, E4]}

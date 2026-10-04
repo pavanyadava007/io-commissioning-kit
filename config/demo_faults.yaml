@@ -1,0 +1,12 @@
+# Wiring faults planted in the SIMULATED rack for the sample loop-check run.
+# The checker does not read this file; it is only used to build the simulated rack.
+seed: 7
+faults:
+  - {kind: swap, tag: PT-301, partner: PT-302}          # two 4-20 mA loops crossed at JB-3
+  - {kind: swap, tag: SH-501-ZSO, partner: SH-501-ZSC}  # shutter limit switches swapped
+  - {kind: open, tag: TT-102}                           # RTD core not landed
+  - {kind: scaling, tag: FT-102, params: {lo: -10, hi: 50}}  # controller range 0..40 widened
+  - {kind: inverted, tag: ZS-601B}                      # NC contact wired as NO
+  - {kind: stuck, tag: LT-101, params: {frac: 0.7}}     # frozen value
+  - {kind: polarity, tag: XL-501}                       # lamp output inverted
+  - {kind: noise, tag: MT-401}                          # unshielded cable near power

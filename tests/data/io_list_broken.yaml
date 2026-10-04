@@ -1,0 +1,77 @@
+# Deliberately broken I/O list. Every planted error is listed in tests/test_lint.py.
+meta: {title: broken example, revision: X}
+points:
+- tag: FT-101
+  description: Coolant flow
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 20]
+  units: L/min
+  scaling: linear
+  nominal: 12
+  alarms: {lo: 8, hi: 25}                 # E011 hi outside range
+  channel: A1-AI1.1
+  field: {device: FT-101, cable: W-1, cores: [BN, WH]}
+  junction_box: {id: JB-1, terminals: ['X1:1', 'X1:2']}
+  trunk: {cable: W-JB-1-A1, cores: [1, 2]}
+  cabinet_terminals: ['A1-X2:1', 'A1-X2:2']
+- tag: FT-101                             # E002 duplicate tag
+  description: Coolant flow copy
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 20]
+  units: L/min
+  scaling: linear
+  nominal: 12
+  channel: A1-AI1.1                       # E003 duplicate channel
+  field: {device: FT-102, cable: W-2, cores: [BN, WH]}
+  junction_box: {id: JB-1, terminals: ['X1:3', 'X1:4']}
+  trunk: {cable: W-JB-1-A1, cores: [2, 3]}   # E004 core 2 reused
+  cabinet_terminals: ['A1-X2:3', 'A1-X2:4']
+- tag: TT-101
+  description: Coolant temperature
+  subsystem: cooling
+  signal: AI_RTD
+  range: [0, 50]
+  units: bar                              # E006 RTD with pressure units
+  scaling: linear
+  nominal: 20
+  channel: A1-RT1.1
+  field: {device: TE-101, cable: W-3, cores: [RD, RD]}   # E009 RTD needs 3 cores
+  junction_box: {id: JB-1, terminals: ['X1:5', 'X1:6']}
+  trunk: {cable: W-JB-1-A1, cores: [5, 6]}
+  cabinet_terminals: ['A1-X2:5', 'A1-X2:6']
+- tag: PT-201
+  description: Vacuum
+  subsystem: vacuum
+  signal: AI_0_10V
+  range: [0, 100]                         # E006 log scaling with low end 0
+  units: mbar
+  scaling: log
+  nominal: 1
+  channel: A1-AV1.1
+  field: {device: PG-201, cable: W-4, cores: [BN, WH, BU]}
+  junction_box: {id: JB-2, terminals: ['X1:1', 'X1:2', 'X1:3']}
+  trunk: {cable: W-JB-2-A1, cores: [1, 2, 3]}
+  cabinet_terminals: ['A1-X2:7', 'A1-X2:8', 'A1-X2:9']
+- tag: ZS-601A
+  description: Door channel A
+  subsystem: safety
+  signal: DI
+  normal: true
+  contact: NC
+  redundant_pair: ZS-601C                 # E013 partner missing
+  channel: A1-AI2.1                       # E007 DI on an analog module
+  field: {device: ZS-601, cable: W-5, cores: [BN, BU]}
+  junction_box: {id: JB-4, terminals: ['X1:1', 'X1:2']}
+  trunk: {cable: W-JB-4-A1, cores: [1, 2]}
+  cabinet_terminals: ['A1-X2:10', 'A1-X2:11']
+- tag: XL-501
+  subsystem: laser                        # E001 description missing
+  signal: DO
+  normal: false
+  channel: A1-DO1.1
+  field: {device: lamp, cable: W-6, cores: [BK, BU]}
+  junction_box: {id: JB-4, terminals: ['X1:3', 'X1:4']}
+  trunk: {cable: W-JB-4-A1, cores: [3, 4]}
+  cabinet_terminals: ['A1-X2:12', 'A1-X2:13']

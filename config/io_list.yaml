@@ -1,0 +1,800 @@
+# I/O list - single source of truth for rack A1 (SIMULATED bench).
+# Every generated document and every test reads this file.
+meta:
+  title: Laser amplifier test bench - instrumentation rack A1 (SIMULATED)
+  revision: C
+  note: Simulated rack for a commissioning toolkit demo. Not real plant data.
+points:
+
+- tag: FT-101
+  description: Coolant flow, amplifier head circuit
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 20]
+  units: L/min
+  scaling: linear
+  nominal: 12
+  alarms:
+    lo: 8
+    lolo: 6
+  channel: A1-AI1.1
+  field:
+    device: FT-101 flow transmitter
+    cable: W-FT-101
+    cores: [BN, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:1', 'X1:2']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [1, 2]
+  cabinet_terminals: ['A1-X2:1', 'A1-X2:2']
+
+- tag: FT-102
+  description: Coolant flow, diode pump modules
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 40]
+  units: L/min
+  scaling: linear
+  nominal: 24
+  alarms:
+    lo: 15
+  channel: A1-AI1.2
+  field:
+    device: FT-102 flow transmitter
+    cable: W-FT-102
+    cores: [BN, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:3', 'X1:4']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [3, 4]
+  cabinet_terminals: ['A1-X2:3', 'A1-X2:4']
+
+- tag: PT-101
+  description: Coolant supply pressure
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 10]
+  units: bar
+  scaling: linear
+  nominal: 4
+  alarms:
+    lo: 2
+    hi: 6
+  channel: A1-AI1.3
+  field:
+    device: PT-101 pressure transmitter
+    cable: W-PT-101
+    cores: [BN, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:5', 'X1:6']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [5, 6]
+  cabinet_terminals: ['A1-X2:5', 'A1-X2:6']
+
+- tag: LT-101
+  description: Coolant tank level
+  subsystem: cooling
+  signal: AI_4_20mA
+  range: [0, 100]
+  units: '%'
+  scaling: linear
+  nominal: 70
+  alarms:
+    lo: 20
+  channel: A1-AI1.4
+  field:
+    device: LT-101 level transmitter
+    cable: W-LT-101
+    cores: [BN, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:7', 'X1:8']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [7, 8]
+  cabinet_terminals: ['A1-X2:7', 'A1-X2:8']
+
+- tag: TT-101
+  description: Coolant supply temperature
+  subsystem: cooling
+  signal: AI_RTD
+  range: [0, 50]
+  units: degC
+  scaling: linear
+  nominal: 20
+  alarms:
+    hi: 25
+    hihi: 28
+  channel: A1-RT1.1
+  field:
+    device: TE-101 PT100 sensor
+    cable: W-TT-101
+    cores: [RD, RD, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:9', 'X1:10', 'X1:11']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [9, 10, 11]
+  cabinet_terminals: ['A1-X2:9', 'A1-X2:10', 'A1-X2:11']
+
+- tag: TT-102
+  description: Coolant return temperature
+  subsystem: cooling
+  signal: AI_RTD
+  range: [0, 50]
+  units: degC
+  scaling: linear
+  nominal: 24
+  alarms:
+    hi: 30
+    hihi: 35
+  channel: A1-RT1.2
+  field:
+    device: TE-102 PT100 sensor
+    cable: W-TT-102
+    cores: [RD, RD, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:12', 'X1:13', 'X1:14']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [12, 13, 14]
+  cabinet_terminals: ['A1-X2:12', 'A1-X2:13', 'A1-X2:14']
+
+- tag: TT-103
+  description: Amplifier head body temperature
+  subsystem: cooling
+  signal: AI_RTD
+  range: [0, 100]
+  units: degC
+  scaling: linear
+  nominal: 30
+  alarms:
+    hi: 45
+  channel: A1-RT1.3
+  field:
+    device: TE-103 PT100 sensor
+    cable: W-TT-103
+    cores: [RD, RD, WH]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:15', 'X1:16', 'X1:17']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [15, 16, 17]
+  cabinet_terminals: ['A1-X2:15', 'A1-X2:16', 'A1-X2:17']
+
+- tag: CH-101-RUN
+  description: Chiller running
+  subsystem: cooling
+  signal: DI
+  normal: true
+  contact: 'NO'
+  channel: A1-DI1.1
+  field:
+    device: Chiller CH-101 status relay (NO)
+    cable: W-CH-101-RUN
+    cores: [BN, BU]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:18', 'X1:19']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [18, 19]
+  cabinet_terminals: ['A1-X2:18', 'A1-X2:19']
+
+- tag: CH-101-FLT
+  description: Chiller healthy (opens on fault)
+  subsystem: cooling
+  signal: DI
+  normal: true
+  contact: NC
+  channel: A1-DI1.2
+  field:
+    device: Chiller CH-101 fault relay (NC)
+    cable: W-CH-101-FLT
+    cores: [BN, BU]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:20', 'X1:21']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [20, 21]
+  cabinet_terminals: ['A1-X2:20', 'A1-X2:21']
+
+- tag: CH-101-EN
+  description: Chiller remote start
+  subsystem: cooling
+  signal: DO
+  normal: false
+  channel: A1-DO1.1
+  field:
+    device: Chiller CH-101 remote start input
+    cable: W-CH-101-EN
+    cores: [BK, BU]
+  junction_box:
+    id: JB-1
+    terminals: ['X1:22', 'X1:23']
+  trunk:
+    cable: W-JB-1-A1
+    cores: [22, 23]
+  cabinet_terminals: ['A1-X2:22', 'A1-X2:23']
+
+- tag: PT-201
+  description: Vacuum, spatial filter tube
+  subsystem: vacuum
+  signal: AI_0_10V
+  range: [1.0e-08, 100.0]
+  units: mbar
+  scaling: log
+  nominal: 1.0e-05
+  alarms:
+    hi: 0.001
+  channel: A1-AV1.1
+  field:
+    device: PG-201 combination gauge
+    cable: W-PT-201
+    cores: [BN, WH, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:1', 'X1:2', 'X1:3']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [1, 2, 3]
+  cabinet_terminals: ['A1-X2:24', 'A1-X2:25', 'A1-X2:26']
+
+- tag: PT-202
+  description: Vacuum, forevacuum line
+  subsystem: vacuum
+  signal: AI_0_10V
+  range: [0.001, 1000.0]
+  units: mbar
+  scaling: log
+  nominal: 0.05
+  alarms:
+    hi: 1.0
+  channel: A1-AV1.2
+  field:
+    device: PG-202 Pirani gauge
+    cable: W-PT-202
+    cores: [BN, WH, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:4', 'X1:5', 'X1:6']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [4, 5, 6]
+  cabinet_terminals: ['A1-X2:27', 'A1-X2:28', 'A1-X2:29']
+
+- tag: VP-201-RUN
+  description: Roughing pump running
+  subsystem: vacuum
+  signal: DI
+  normal: true
+  contact: 'NO'
+  channel: A1-DI1.3
+  field:
+    device: Pump VP-201 status contact (NO)
+    cable: W-VP-201-RUN
+    cores: [BN, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:7', 'X1:8']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [7, 8]
+  cabinet_terminals: ['A1-X2:30', 'A1-X2:31']
+
+- tag: VV-201-CMD
+  description: Gate valve open command
+  subsystem: vacuum
+  signal: DO
+  normal: false
+  channel: A1-DO1.2
+  field:
+    device: VV-201 solenoid pilot valve
+    cable: W-VV-201-CMD
+    cores: [BK, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:9', 'X1:10']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [9, 10]
+  cabinet_terminals: ['A1-X2:32', 'A1-X2:33']
+
+- tag: VV-201-ZSO
+  description: Gate valve open limit
+  subsystem: vacuum
+  signal: DI
+  normal: true
+  contact: 'NO'
+  channel: A1-DI1.4
+  field:
+    device: VV-201 open limit switch (NO)
+    cable: W-VV-201-ZSO
+    cores: [BN, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:11', 'X1:12']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [11, 12]
+  cabinet_terminals: ['A1-X2:34', 'A1-X2:35']
+
+- tag: VV-201-ZSC
+  description: Gate valve closed limit
+  subsystem: vacuum
+  signal: DI
+  normal: false
+  contact: 'NO'
+  channel: A1-DI1.5
+  field:
+    device: VV-201 closed limit switch (NO)
+    cable: W-VV-201-ZSC
+    cores: [BN, BU]
+  junction_box:
+    id: JB-2
+    terminals: ['X1:13', 'X1:14']
+  trunk:
+    cable: W-JB-2-A1
+    cores: [13, 14]
+  cabinet_terminals: ['A1-X2:36', 'A1-X2:37']
+
+- tag: PT-301
+  description: N2 purge supply pressure
+  subsystem: gas
+  signal: AI_4_20mA
+  range: [0, 6]
+  units: bar
+  scaling: linear
+  nominal: 3
+  alarms:
+    lo: 1.5
+    hi: 4.5
+  channel: A1-AI2.1
+  field:
+    device: PT-301 pressure transmitter
+    cable: W-PT-301
+    cores: [BN, WH]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:1', 'X1:2']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [1, 2]
+  cabinet_terminals: ['A1-X2:38', 'A1-X2:39']
+
+- tag: FT-301
+  description: N2 purge flow
+  subsystem: gas
+  signal: AI_4_20mA
+  range: [0, 50]
+  units: L/min
+  scaling: linear
+  nominal: 10
+  alarms:
+    lo: 2
+  channel: A1-AI2.2
+  field:
+    device: FT-301 thermal mass flow meter
+    cable: W-FT-301
+    cores: [BN, WH]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:3', 'X1:4']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [3, 4]
+  cabinet_terminals: ['A1-X2:40', 'A1-X2:41']
+
+- tag: PT-302
+  description: Instrument air pressure
+  subsystem: gas
+  signal: AI_4_20mA
+  range: [0, 10]
+  units: bar
+  scaling: linear
+  nominal: 6.5
+  alarms:
+    lo: 5
+  channel: A1-AI2.3
+  field:
+    device: PT-302 pressure transmitter
+    cable: W-PT-302
+    cores: [BN, WH]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:5', 'X1:6']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [5, 6]
+  cabinet_terminals: ['A1-X2:42', 'A1-X2:43']
+
+- tag: XV-301-CMD
+  description: N2 purge valve open command
+  subsystem: gas
+  signal: DO
+  normal: false
+  channel: A1-DO1.3
+  field:
+    device: XV-301 solenoid valve
+    cable: W-XV-301-CMD
+    cores: [BK, BU]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:7', 'X1:8']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [7, 8]
+  cabinet_terminals: ['A1-X2:44', 'A1-X2:45']
+
+- tag: XV-301-ZSO
+  description: N2 purge valve open feedback
+  subsystem: gas
+  signal: DI
+  normal: false
+  contact: 'NO'
+  channel: A1-DI1.6
+  field:
+    device: XV-301 open position switch (NO)
+    cable: W-XV-301-ZSO
+    cores: [BN, BU]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:9', 'X1:10']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [9, 10]
+  cabinet_terminals: ['A1-X2:46', 'A1-X2:47']
+
+- tag: MT-401
+  description: Lab room humidity
+  subsystem: environment
+  signal: AI_4_20mA
+  range: [0, 100]
+  units: '%rH'
+  scaling: linear
+  nominal: 40
+  alarms:
+    hi: 60
+  channel: A1-AI2.4
+  field:
+    device: MT-401 humidity transmitter
+    cable: W-MT-401
+    cores: [BN, WH]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:11', 'X1:12']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [11, 12]
+  cabinet_terminals: ['A1-X2:48', 'A1-X2:49']
+
+- tag: TT-401
+  description: Lab room temperature
+  subsystem: environment
+  signal: AI_RTD
+  range: [0, 50]
+  units: degC
+  scaling: linear
+  nominal: 21
+  alarms:
+    hi: 24
+  channel: A1-RT1.4
+  field:
+    device: TE-401 PT100 sensor
+    cable: W-TT-401
+    cores: [RD, RD, WH]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:13', 'X1:14', 'X1:15']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [13, 14, 15]
+  cabinet_terminals: ['A1-X2:50', 'A1-X2:51', 'A1-X2:52']
+
+- tag: AT-402
+  description: Lab oxygen concentration
+  subsystem: environment
+  signal: AI_0_10V
+  range: [0, 25]
+  units: '%vol'
+  scaling: linear
+  nominal: 20.9
+  alarms:
+    lo: 19.5
+  channel: A1-AV1.3
+  field:
+    device: AT-402 oxygen depletion monitor
+    cable: W-AT-402
+    cores: [BN, WH, BU]
+  junction_box:
+    id: JB-3
+    terminals: ['X1:16', 'X1:17', 'X1:18']
+  trunk:
+    cable: W-JB-3-A1
+    cores: [16, 17, 18]
+  cabinet_terminals: ['A1-X2:53', 'A1-X2:54', 'A1-X2:55']
+
+- tag: PD-501-EN
+  description: Diode pump driver enable
+  subsystem: laser
+  signal: DO
+  normal: false
+  channel: A1-DO1.4
+  field:
+    device: Diode driver PD-501 enable input
+    cable: W-PD-501-EN
+    cores: [BK, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:1', 'X1:2']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [1, 2]
+  cabinet_terminals: ['A1-X2:56', 'A1-X2:57']
+
+- tag: PD-501-FLT
+  description: Diode pump driver healthy (opens on fault)
+  subsystem: laser
+  signal: DI
+  normal: true
+  contact: NC
+  channel: A1-DI1.7
+  field:
+    device: Diode driver PD-501 fault relay (NC)
+    cable: W-PD-501-FLT
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:3', 'X1:4']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [3, 4]
+  cabinet_terminals: ['A1-X2:58', 'A1-X2:59']
+
+- tag: PD-501-RDY
+  description: Diode pump driver ready
+  subsystem: laser
+  signal: DI
+  normal: true
+  contact: 'NO'
+  channel: A1-DI1.8
+  field:
+    device: Diode driver PD-501 ready relay (NO)
+    cable: W-PD-501-RDY
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:5', 'X1:6']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [5, 6]
+  cabinet_terminals: ['A1-X2:60', 'A1-X2:61']
+
+- tag: JT-501
+  description: Diode pump current monitor
+  subsystem: laser
+  signal: AI_0_10V
+  range: [0, 500]
+  units: A
+  scaling: linear
+  nominal: 0
+  alarms:
+    hi: 450
+  channel: A1-AV1.4
+  field:
+    device: Diode driver PD-501 current monitor output
+    cable: W-JT-501
+    cores: [BN, WH, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:7', 'X1:8', 'X1:9']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [7, 8, 9]
+  cabinet_terminals: ['A1-X2:62', 'A1-X2:63', 'A1-X2:64']
+
+- tag: TT-501
+  description: Diode heat sink temperature
+  subsystem: laser
+  signal: AI_RTD
+  range: [0, 100]
+  units: degC
+  scaling: linear
+  nominal: 28
+  alarms:
+    hi: 40
+  channel: A1-RT2.1
+  field:
+    device: TE-501 PT100 sensor
+    cable: W-TT-501
+    cores: [RD, RD, WH]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:10', 'X1:11', 'X1:12']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [10, 11, 12]
+  cabinet_terminals: ['A1-X2:65', 'A1-X2:66', 'A1-X2:67']
+
+- tag: SH-501-CMD
+  description: Beam shutter open command
+  subsystem: laser
+  signal: DO
+  normal: false
+  channel: A1-DO1.5
+  field:
+    device: SH-501 shutter actuator
+    cable: W-SH-501-CMD
+    cores: [BK, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:13', 'X1:14']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [13, 14]
+  cabinet_terminals: ['A1-X2:68', 'A1-X2:69']
+
+- tag: SH-501-ZSO
+  description: Beam shutter open limit
+  subsystem: laser
+  signal: DI
+  normal: false
+  contact: 'NO'
+  channel: A1-DI2.1
+  field:
+    device: SH-501 open limit switch (NO)
+    cable: W-SH-501-ZSO
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:15', 'X1:16']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [15, 16]
+  cabinet_terminals: ['A1-X2:70', 'A1-X2:71']
+
+- tag: SH-501-ZSC
+  description: Beam shutter closed limit
+  subsystem: laser
+  signal: DI
+  normal: true
+  contact: 'NO'
+  channel: A1-DI2.2
+  field:
+    device: SH-501 closed limit switch (NO)
+    cable: W-SH-501-ZSC
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:17', 'X1:18']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [17, 18]
+  cabinet_terminals: ['A1-X2:72', 'A1-X2:73']
+
+- tag: XL-501
+  description: Laser-on warning lamp
+  subsystem: laser
+  signal: DO
+  normal: false
+  channel: A1-DO1.6
+  field:
+    device: XL-501 warning lamp above enclosure door
+    cable: W-XL-501
+    cores: [BK, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:19', 'X1:20']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [19, 20]
+  cabinet_terminals: ['A1-X2:74', 'A1-X2:75']
+
+- tag: ZS-601A
+  description: Enclosure door closed, channel A
+  subsystem: safety
+  signal: DI
+  normal: true
+  contact: NC
+  redundant_pair: ZS-601B
+  channel: A1-DI2.3
+  field:
+    device: ZS-601 door switch contact A (NC, forced opening)
+    cable: W-ZS-601A
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:21', 'X1:22']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [21, 22]
+  cabinet_terminals: ['A1-X2:76', 'A1-X2:77']
+
+- tag: ZS-601B
+  description: Enclosure door closed, channel B
+  subsystem: safety
+  signal: DI
+  normal: true
+  contact: NC
+  redundant_pair: ZS-601A
+  channel: A1-DI3.1
+  field:
+    device: ZS-601 door switch contact B (NC, forced opening)
+    cable: W-ZS-601B
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:23', 'X1:24']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [23, 24]
+  cabinet_terminals: ['A1-X2:78', 'A1-X2:79']
+
+- tag: HS-602A
+  description: E-stop chain healthy, channel A
+  subsystem: safety
+  signal: DI
+  normal: true
+  contact: NC
+  redundant_pair: HS-602B
+  channel: A1-DI2.4
+  field:
+    device: E-stop chain HS-602 contact A (NC)
+    cable: W-HS-602A
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:25', 'X1:26']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [25, 26]
+  cabinet_terminals: ['A1-X2:80', 'A1-X2:81']
+
+- tag: HS-602B
+  description: E-stop chain healthy, channel B
+  subsystem: safety
+  signal: DI
+  normal: true
+  contact: NC
+  redundant_pair: HS-602A
+  channel: A1-DI3.2
+  field:
+    device: E-stop chain HS-602 contact B (NC)
+    cable: W-HS-602B
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:27', 'X1:28']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [27, 28]
+  cabinet_terminals: ['A1-X2:82', 'A1-X2:83']
+
+- tag: HS-604
+  description: Interlock reset pushbutton
+  subsystem: safety
+  signal: DI
+  normal: false
+  contact: 'NO'
+  channel: A1-DI2.5
+  field:
+    device: HS-604 reset pushbutton (NO)
+    cable: W-HS-604
+    cores: [BN, BU]
+  junction_box:
+    id: JB-4
+    terminals: ['X1:29', 'X1:30']
+  trunk:
+    cable: W-JB-4-A1
+    cores: [29, 30]
+  cabinet_terminals: ['A1-X2:84', 'A1-X2:85']
